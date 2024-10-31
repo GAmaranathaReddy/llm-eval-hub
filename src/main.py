@@ -19,7 +19,7 @@ class EvaluateRequest(BaseModel):
 app = FastAPI(swagger_ui_parameters={"syntaxHighlight": False})
 @app.get("/")
 async def main_route():
-  return {"message": "Hey, It is me Goku"}
+  return {"message": "Hey, It is me again, the AI!"}
 
 @app.post('/evaluate')
 def evaluate(request: EvaluateRequest):
